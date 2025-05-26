@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afjal Khan | Portfolio</title>
+  <meta name="description" content="Afjal Khan's modern portfolio: web developer, programmer, and tech enthusiast.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">Afjal<span>Khan</span></div>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" aria-label="Toggle theme">🌙</button></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Hi, I'm Afjal Khan <span class="typing-text"></span></h1>
+      <p class="subtitle">Web Developer | Programmer | Tech Enthusiast</p>
+      <div class="hero-buttons">
+        <a href="Afjal_Khan_Resume.pdf" download class="btn">Download Resume <i class="fa fa-download"></i></a>
+        <div class="social-links">
+          <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:your@email.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </header>
+
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><p>HTML</p><div class="bar"><div class="fill" data-width="90%"></div></div></div>
+      <div class="skill"><p>CSS</p><div class="bar"><div class="fill" data-width="85%"></div></div></div>
+      <div class="skill"><p>JavaScript</p><div class="bar"><div class="fill" data-width="80%"></div></div></div>
+      <div class="skill"><p>Python</p><div class="bar"><div class="fill" data-width="75%"></div></div></div>
+      <div class="skill"><p>C++</p><div class="bar"><div class="fill" data-width="70%"></div></div></div>
+      <div class="skill"><p>React</p><div class="bar"><div class="fill" data-width="70%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="tools">Tools</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-category="tools" data-title="Data Scraping Tool" data-description="An interactive web tool with API integration, built using JavaScript and Python.">
+        <h3>Data Scraping Tool</h3>
+        <p>Interactive web tool with API integration.</p>
+      </div>
+      <div class="project-card" data-category="web" data-title="E-Commerce Website" data-description="A fully responsive e-commerce website with modern animations and secure payment integration.">
+        <h3>E-Commerce Website</h3>
+        <p>Responsive website with animations.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Experience & Timeline</h2>
+    <ul class="timeline">
+      <li>
+        <span class="timeline-date">2024-Present</span>
+        <div class="timeline-content">
+          <h4>Frontend Developer - XYZ Company</h4>
+          <p>Building modern web applications with React and TypeScript.</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-date">2022-2024</span>
+        <div class="timeline-content">
+          <h4>Freelance Developer</h4>
+          <p>Worked on various freelance projects in web development and automation.</p>
+        </div>
+      </li>
+      <!-- Add more timeline entries as needed -->
+    </ul>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-slider">
+      <div class="testimonial active">
+        <p>"Afjal is a highly skilled developer who delivers quality work on time. Highly recommended!"</p>
+        <span>- Client A</span>
+      </div>
+      <div class="testimonial">
+        <p>"Creative, reliable, and a great communicator. Will hire again!"</p>
+        <span>- Client B</span>
+      </div>
+      <!-- Add more testimonials -->
+    </div>
+    <div class="testimonial-controls">
+      <button id="prevTestimonial" aria-label="Previous testimonial">&lt;</button>
+      <button id="nextTestimonial" aria-label="Next testimonial">&gt;</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Afjal Khan. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <!-- Modal for Project Details -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
