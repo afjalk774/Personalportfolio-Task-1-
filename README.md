@@ -2,6 +2,9 @@
 Personal portfolio website
 A responsive and interactive personal portfolio website built with HTML, CSS, and JavaScript. This site showcases my skills, projects, and contact information, and includes dynamic animations, a light/dark mode toggle, and an engaging user interface.
 
+How to use it
+
+Open index.html in your browser or use a live server extension (like in VS Code).
 📌 Features
 Responsive design (mobile-friendly)
 
